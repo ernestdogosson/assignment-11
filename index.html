@@ -14,6 +14,10 @@
 			href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+		/>
 		<link rel="stylesheet" href="/css/main.css" />
 	</head>
 	<body>
@@ -47,11 +51,13 @@
 					<div class="hero__title-section">
 						<span class="hero__accent">shooting stars</span>
 						<h1 class="hero__heading">
-							Hello, I’m Bakhtiyar Sattarov, product designer with experience in
-							studios and startups
+							Hello, I’m Bakhtiyar Sattarov,
+							<span class="heading__accent">product designer</span> with
+							experience in studios and startups
 						</h1>
 					</div>
 					<div class="hero__quote">
+						<div class="hero__quote-line"></div>
 						<blockquote class="hero__quote-text">
 							Design is about progress
 						</blockquote>
@@ -62,81 +68,218 @@
 			<main>
 				<section class="gallery">
 					<div class="gallery__grid">
-						<img
-							id="gallery__item-1"
-							class="gallery__item"
-							src="./images/index-img/Rectangle.png"
-							alt="Beautiful landscape sunset view"
-						/>
-						<img
-							id="gallery__item-2"
-							class="gallery__item"
-							src="./images/index-img/Rectangle-4.png"
-							alt="Portrait of a woman"
-						/>
-						<img
-							id="gallery__item-3"
-							class="gallery__item"
-							src="./images/index-img/Rectangle-8.png"
-							alt="Modern architecture building"
-						/>
-						<img
-							id="gallery__item-4"
-							class="gallery__item"
-							src="./images/index-img/Rectangle-1.png"
-							alt="Forest nature scene"
-						/>
-						<img
-							id="gallery__item-5"
-							class="gallery__item"
-							src="./images/index-img/Rectangle-5.png"
-							alt="Urban street photography"
-						/>
-						<img
-							id="gallery__item-6"
-							class="gallery__item"
-							src="./images/index-img/Rectangle-9.png"
-							alt="Abstract artistic composition"
-						/>
-						<img
-							id="gallery__item-7"
-							class="gallery__item"
-							src="./images/index-img/Rectangle-2.png"
-							alt="Coastal waves crashing"
-						/>
-						<img
-							id="gallery__item-8"
-							class="gallery__item"
-							src="./images/index-img/Rectangle-6.png"
-							alt="Portrait of a man"
-						/>
-						<img
-							id="gallery__item-9"
-							class="gallery__item"
-							src="./images/index-img/Rectangle-10.png"
-							alt="Night cityscape with lights"
-						/>
-						<img
-							id="gallery__item-10"
-							class="gallery__item"
-							src="./images/index-img/Rectangle-3.png"
-							alt="Wildlife bird photography"
-						/>
-						<img
-							id="gallery__item-11"
-							class="gallery__item"
-							src="./images/index-img/Rectangle-7.png"
-							alt="Macro flower close-up"
-						/>
-						<img
-							id="gallery__item-12"
-							class="gallery__item"
-							src="./images/index-img/Rectangle-11.png"
-							alt="Vintage car photography"
-						/>
+						<div id="gallery__item-1" class="gallery__item">
+							<img
+								src="./images/index-img/Rectangle.png"
+								alt="Beautiful landscape sunset view"
+								class="gallery__image"
+							/>
+						</div>
+						<div id="gallery__item-2" class="gallery__item">
+							<img
+								src="./images/index-img/Rectangle-4.png"
+								alt="Portrait of a woman"
+								class="gallery__image"
+							/>
+						</div>
+						<div id="gallery__item-3" class="gallery__item">
+							<img
+								src="./images/index-img/Rectangle-8.png"
+								alt="Modern architecture building"
+								class="gallery__image"
+							/>
+						</div>
+						<div id="gallery__item-4" class="gallery__item">
+							<img
+								src="./images/index-img/Rectangle-1.png"
+								alt="Forest nature scene"
+								class="gallery__image"
+							/>
+						</div>
+						<div id="gallery__item-5" class="gallery__item">
+							<img
+								src="./images/index-img/Rectangle-5.png"
+								alt="Urban street photography"
+								class="gallery__image"
+							/>
+						</div>
+						<div id="gallery__item-6" class="gallery__item">
+							<img
+								src="./images/index-img/Rectangle-9.png"
+								alt="Abstract artistic composition"
+								class="gallery__image"
+							/>
+						</div>
+						<div id="gallery__item-7" class="gallery__item">
+							<img
+								src="./images/index-img/Rectangle-2.png"
+								alt="Coastal waves crashing"
+								class="gallery__image"
+							/>
+						</div>
+						<div id="gallery__item-8" class="gallery__item">
+							<img
+								src="./images/index-img/Rectangle-6.png"
+								alt="Portrait of a man"
+								class="gallery__image"
+							/>
+						</div>
+						<div id="gallery__item-9" class="gallery__item">
+							<img
+								src="./images/index-img/Rectangle-10.png"
+								alt="Night cityscape with lights"
+								class="gallery__image"
+							/>
+						</div>
+						<div id="gallery__item-10" class="gallery__item">
+							<img
+								src="./images/index-img/Rectangle-3.png"
+								alt="Wildlife bird photography"
+								class="gallery__image"
+							/>
+						</div>
+						<div id="gallery__item-11" class="gallery__item">
+							<img
+								src="./images/index-img/Rectangle-7.png"
+								alt="Macro flower close-up"
+								class="gallery__image"
+							/>
+						</div>
+						<div id="gallery__item-12" class="gallery__item">
+							<img
+								src="./images/index-img/Rectangle-11.png"
+								alt="Vintage car photography"
+								class="gallery__image"
+							/>
+						</div>
+					</div>
+				</section>
+
+				<section class="services">
+					<div class="services__intro">
+						<h2 class="services__description">
+							We love work hard and explore new things that's why we cover lot
+							of things. Check our service list and view details
+						</h2>
+					</div>
+					<div class="services__content">
+						<ul class="services__list">
+							<li class="services__item">multimedia</li>
+							<li class="services__item">interactive design</li>
+							<li class="services__item">branding</li>
+							<li class="services__item">creative design</li>
+							<li class="services__item">packaging</li>
+							<li class="services__item">coding</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="awards">
+					<div class="award">
+						<div class="award__badge">
+							<p class="award__platform">Awwards</p>
+						</div>
+						<div class="award__categories">
+							<p class="award__category">site of the day</p>
+							<p class="award__category">best navigation</p>
+						</div>
+						<div class="award__project">
+							<div class="award__project-item">
+								<h3 class="award__title">Genesis UI Kit</h3>
+								<p class="award__description">
+									Application that helps to find nearest sport centres
+								</p>
+							</div>
+							<div class="award__project-itme">
+								<h3 class="award__title">Genesis UI Kit</h3>
+								<p class="award__description">
+									Application that helps to find nearest sport centres
+								</p>
+							</div>
+						</div>
+						<div class="award__meta">
+							<p class="award__year">2018</p>
+							<p class="award__year">2018</p>
+						</div>
+					</div>
+					<div class="award">
+						<div class="award__badge">
+							<p class="award__platform">Awwards</p>
+						</div>
+						<div class="award__categories">
+							<p class="award__category">site of the day</p>
+							<p class="award__category">best navigation</p>
+						</div>
+						<div class="award__project">
+							<div class="award__project-item">
+								<h3 class="award__title">Genesis UI Kit</h3>
+								<p class="award__description">
+									Application that helps to find nearest sport centres
+								</p>
+							</div>
+							<div class="award__project-item">
+								<h3 class="award__title">Genesis UI Kit</h3>
+								<p class="award__description">
+									Application that helps to find nearest sport centres
+								</p>
+							</div>
+						</div>
+						<div class="award__meta">
+							<p class="award__year">2017</p>
+							<p class="award__year">2016</p>
+						</div>
 					</div>
 				</section>
 			</main>
+
+			<footer class="footer">
+				<div class="footer__navigation">
+					<div class="footer__logo">
+						<img
+							src="./images/index-img/Logo .svg"
+							alt="SASS Photography Logo"
+							class="footer__logo-img"
+						/>
+					</div>
+					<div class="footer__links-box">
+						<div class="footer__menu">
+							<nav class="footer__nav">
+								<ul class="footer__list">
+									<li class="footer__item">
+										<a href="/page/services.html" class="footer__link"
+											>Project</a
+										>
+									</li>
+									<li class="footer__item">
+										<a href="/page/contact.html" class="footer__link"
+											>Contact</a
+										>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__social">
+							<ul class="footer__social-list">
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link">
+										<i class="fab fa-instagram footer__social-icon"></i>
+									</a>
+								</li>
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link">
+										<i class="fab fa-twitter footer__social-icon"></i>
+									</a>
+								</li>
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link">
+										<i class="fab fa-linkedin footer__social-icon"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>

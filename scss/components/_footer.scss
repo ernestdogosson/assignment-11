@@ -1,0 +1,29 @@
+@use '../mixins';
+
+.footer {
+	&__navigation {
+		@include mixins.flex;
+		justify-content: space-between;
+		padding: 20px;
+	}
+
+	&__links-box {
+		@include mixins.flex;
+	}
+
+	&__list {
+		@include mixins.flex;
+	}
+
+	&__item {
+		padding: 10px 20px;
+	}
+
+	&__social-list {
+		@include mixins.flex;
+	}
+
+	&__social-item {
+		padding: 10px;
+	}
+}

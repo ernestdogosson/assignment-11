@@ -1,44 +1,39 @@
 @use '../mixins';
 
 .header {
-	padding: 20px;
+	padding: 20px 0;
 	margin-bottom: 2rem;
+	font-family: 'Mulish', sans-serif;
 
 	&__navigation {
-		@include flex;
+		@include mixins.flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	/*
+
 	&__logo {
-		// logo styles if needed
+		flex: 1;
 	}
 
-	&__logo-img {
-		// logo image styles if needed
-	}
-*/
 	&__menu {
-		@include flex;
+		flex: 1;
 	}
 
-	&__nav {
-		&__list {
-			@include flex;
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
+	&__list {
+		@include mixins.flex;
+		justify-content: end;
+	}
 
-		&__item {
-			margin-left: 30px;
-			font-family: inherit;
-		}
+	&__item {
+		margin-left: 30px;
+		font-family: inherit;
+	}
 
-		&__link {
-			text-decoration: none;
-			color: inherit;
-			text-transform: capitalize;
-		}
+	&__link {
+		text-decoration: none;
+		color: inherit;
+		text-transform: capitalize;
+		font-size: 18px;
+		font-weight: bold;
 	}
 }
