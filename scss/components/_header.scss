@@ -1,0 +1,44 @@
+@use '../mixins';
+
+.header {
+	padding: 20px;
+	margin-bottom: 2rem;
+
+	&__navigation {
+		@include flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	/*
+	&__logo {
+		// logo styles if needed
+	}
+
+	&__logo-img {
+		// logo image styles if needed
+	}
+*/
+	&__menu {
+		@include flex;
+	}
+
+	&__nav {
+		&__list {
+			@include flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		&__item {
+			margin-left: 30px;
+			font-family: inherit;
+		}
+
+		&__link {
+			text-decoration: none;
+			color: inherit;
+			text-transform: capitalize;
+		}
+	}
+}

@@ -1,0 +1,113 @@
+@use '../mixins';
+
+// Hero Section
+.hero {
+	margin-bottom: 4rem;
+	padding: 0 20px;
+
+	&__content {
+		@include flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		min-height: 200px;
+	}
+
+	&__title-section {
+		@include flex;
+
+		align-items: flex-start;
+	}
+
+	&__accent {
+		font-size: 1.2rem;
+		text-transform: lowercase;
+		margin-bottom: 0.5rem;
+		color: #666;
+	}
+
+	&__heading {
+		font-size: 3rem;
+		font-weight: bold;
+		margin: 0;
+		text-transform: capitalize;
+	}
+
+	&__quote {
+		text-align: right;
+		max-width: 300px;
+	}
+
+	&__quote-text {
+		font-size: 1.1rem;
+		font-style: italic;
+		margin: 0 0 0.5rem 0;
+		color: #555;
+	}
+
+	&__quote-author {
+		font-size: 0.9rem;
+		color: #777;
+	}
+}
+
+// Gallery Section
+.gallery {
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(9, 1fr);
+		grid-template-rows: repeat(32, 1fr);
+		gap: 1.25rem;
+		height: 1960px;
+	}
+
+	&__item {
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		overflow: hidden;
+		transition: transform 0.3s ease;
+		cursor: pointer;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+
+	// Grid positioning
+	#gallery__item-1 {
+		grid-area: 1 / 1 / 7 / 4;
+	}
+	#gallery__item-2 {
+		grid-area: 1 / 4 / 5 / 7;
+	}
+	#gallery__item-3 {
+		grid-area: 1 / 7 / 6 / -1;
+	}
+	#gallery__item-4 {
+		grid-area: 8 / 1 / 16 / 4;
+	}
+	#gallery__item-5 {
+		grid-area: 7 / 4 / 13 / 7;
+	}
+	#gallery__item-6 {
+		grid-area: 11 / 7 / 16 / -1;
+	}
+	#gallery__item-7 {
+		grid-area: 16 / 1 / 25 / 4;
+	}
+	#gallery__item-8 {
+		grid-area: 14 / 4 / 24 / 7;
+	}
+	#gallery__item-9 {
+		grid-area: 18 / 7 / 25 / -1;
+	}
+	#gallery__item-10 {
+		grid-area: 24 / 1 / -1 / 4;
+	}
+	#gallery__item-11 {
+		grid-area: 23 / 4 / -1 / 7;
+	}
+	#gallery__item-12 {
+		grid-area: 27 / 7 / -1 / -1;
+	}
+}
