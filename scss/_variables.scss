@@ -1,6 +1,8 @@
+// Fonts
+$font: 'Mulish', sans-serif;
+
 // Colors
 $text-color-primary: #111111;
 $text-color-secondary: #4a4ff2;
 $border-color: #979797;
-
-// Fonts
+$darker-color: lighten($text-color-secondary, 5%);

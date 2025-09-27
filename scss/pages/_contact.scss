@@ -5,6 +5,7 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	gap: 4rem;
+	height: 100vh;
 
 	&__content {
 		flex: 1;
@@ -12,22 +13,24 @@
 
 	&__title {
 		font-size: 2.5rem;
-		font-weight: 700;
-		line-height: 1.3;
+		font-weight: bold;
+		line-height: 1.4;
 		margin-bottom: 1.5rem;
-		max-width: 600px;
+		max-width: 400px;
+		width: 100%;
 	}
 
 	&__description {
 		font-size: 1.1rem;
 		line-height: 1.7;
-		color: #666;
 		max-width: 500px;
+		opacity: 0.8;
 	}
 
 	&__form-container {
 		flex: 1;
-		min-width: 400px;
+		width: 100%;
+		max-width: 475px;
 	}
 
 	&__form {
@@ -40,10 +43,10 @@
 
 	&__label {
 		display: block;
-		font-weight: 500;
+		font-weight: bold;
+		opacity: 0.6;
 		margin-bottom: 0.5rem;
 		text-transform: capitalize;
-		color: #111111;
 	}
 
 	&__input,
@@ -53,14 +56,13 @@
 		border: none;
 		border-top: solid 1px #979797;
 		opacity: 0.3;
-		border-radius: 4px;
-		font-family: inherit;
+		color: $text-color-primary;
 		font-size: 1rem;
 		transition: border-color 0.3s ease;
 
 		&:focus {
 			outline: none;
-			border-color: #333;
+			border-color: #979797;
 		}
 	}
 
@@ -69,8 +71,8 @@
 	}
 
 	&__button {
-		background: #4a4ff2;
-		color: white;
+		background: $text-color-secondary;
+		color: #fff;
 		border: none;
 		padding: 0.875rem 2rem;
 		font-size: 1rem;
@@ -80,7 +82,7 @@
 		transition: background-color 0.3s ease;
 
 		&:hover {
-			background: #555;
+			background: $darker-color;
 		}
 	}
 }

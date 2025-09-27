@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>SASS Photography Portfolio</title>
+		<title>Genesis</title>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -25,11 +25,13 @@
 			<header class="header">
 				<div class="header__navigation">
 					<div class="header__logo">
-						<img
-							src="../images/index-img/Logo .svg"
-							alt="SASS Photography Logo"
-							class="header__logo-img"
-						/>
+						<a href="../index.html">
+							<img
+								src="../images/index-img/Logo .svg"
+								alt="SASS Photography Logo"
+								class="header__logo-img"
+							/>
+						</a>
 					</div>
 					<nav class="header__nav">
 						<ul class="header__list">
@@ -127,42 +129,50 @@
 			<footer class="footer">
 				<div class="footer__navigation">
 					<div class="footer__logo">
-						<img
-							src="../images/index-img/Logo .svg"
-							alt="SASS Photography Logo"
-							class="footer__logo-img"
-						/>
+						<a href="#">
+							<img
+								src="../images/index-img/Logo .svg"
+								alt="SASS Photography Logo"
+								class="footer__logo-img"
+							/>
+						</a>
 					</div>
-					<div class="footer__menu">
-						<nav class="footer__nav">
-							<ul class="footer__list">
-								<li class="footer__item">
-									<a href="/page/services.html" class="footer__link">Project</a>
+					<div class="footer__links-box">
+						<div class="footer__menu">
+							<nav class="footer__nav">
+								<ul class="footer__list">
+									<li class="footer__item">
+										<a href="/page/project.html" class="footer__link"
+											>Projects</a
+										>
+									</li>
+									<li class="footer__item">
+										<a href="/page/contact.html" class="footer__link"
+											>Contact</a
+										>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__social">
+							<ul class="footer__social-list">
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link">
+										<i class="fas fa-basketball-ball"></i>
+									</a>
 								</li>
-								<li class="footer__item">
-									<a href="/page/contact.html" class="footer__link">Contact</a>
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link">
+										<i class="fab fa-instagram footer__social-icon"></i>
+									</a>
+								</li>
+								<li class="footer__social-item">
+									<a href="#" class="footer__social-link">
+										<i class="fab fa-twitter footer__social-icon"></i>
+									</a>
 								</li>
 							</ul>
-						</nav>
-					</div>
-					<div class="footer__social">
-						<ul class="footer__social-list">
-							<li class="footer__social-item">
-								<a href="#" class="footer__social-link">
-									<i class="fab fa-instagram footer__social-icon"></i>
-								</a>
-							</li>
-							<li class="footer__social-item">
-								<a href="#" class="footer__social-link">
-									<i class="fab fa-twitter footer__social-icon"></i>
-								</a>
-							</li>
-							<li class="footer__social-item">
-								<a href="#" class="footer__social-link">
-									<i class="fab fa-linkedin footer__social-icon"></i>
-								</a>
-							</li>
-						</ul>
+						</div>
 					</div>
 				</div>
 			</footer>

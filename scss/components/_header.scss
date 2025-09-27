@@ -3,7 +3,6 @@
 .header {
 	padding: 20px 0;
 	margin-bottom: 2rem;
-	font-family: 'Mulish', sans-serif;
 
 	&__navigation {
 		@include mixins.flex;
@@ -26,14 +25,21 @@
 
 	&__item {
 		margin-left: 30px;
-		font-family: inherit;
 	}
 
 	&__link {
 		text-decoration: none;
-		color: inherit;
 		text-transform: capitalize;
 		font-size: 18px;
 		font-weight: bold;
+		padding: 0.75rem 1.6rem;
+		transition: all 0.3s ease;
+
+		&__link:hover {
+			animation: pulse 1s infinite;
+		}
+	}
+
+	&__link:active {
 	}
 }
