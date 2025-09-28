@@ -1,36 +1,78 @@
-@use '../mixins';
+@use '../variables' as *;
+@use '../functions' as *;
+@use '../mixins' as *;
 
 .footer {
-	color: $text-color-primary;
+	margin-top: 3.125rem;
+	padding: 0.875rem 0 2.938rem;
+
 	&__navigation {
-		@include mixins.flex;
-		justify-content: space-between;
-		padding: 20px 0;
+		@include flex-between;
+		padding: space('header-padding') 0;
+	}
+
+	&__logo,
+	&__links-box {
+		@include flex-center;
+		flex: 1;
 	}
 
 	&__links-box {
-		@include mixins.flex;
+		justify-content: end;
+	}
+
+	&__menu {
+		margin-right: 4rem;
+	}
+
+	&__socials {
+		padding-right: space(nav-spacing);
 	}
 
 	&__link {
-		font-weight: bold;
-		font-size: 18px;
+		font-weight: 700;
+		font-size: font-size('nav-link');
 		letter-spacing: -0.35px;
+		transition: color 0.3s ease;
+		margin-right: space('nav-spacing');
+
+		&:hover {
+			color: $text-color-secondary;
+		}
 	}
 
 	&__list {
-		@include mixins.flex;
+		@include flex;
+		margin: 0;
+		padding: 0;
 	}
 
 	&__item {
-		padding: 10px 20px;
+		margin-right: space('nav-spacing');
 	}
 
 	&__social-list {
-		@include mixins.flex;
+		@include flex;
+		margin: 0;
+		padding: 0;
 	}
 
 	&__social-item {
-		padding: 10px;
+		padding: 0.625rem;
+		transition: transform 0.3s ease;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+
+	&__social-link {
+		color: $text-color-primary;
+		font-size: font-size('nav-link');
+		transition: color 0.3s ease;
+
+		&:hover {
+			color: $text-color-secondary;
+		}
 	}
 }

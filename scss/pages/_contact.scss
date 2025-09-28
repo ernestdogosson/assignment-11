@@ -1,30 +1,38 @@
-@use '../mixins';
+@use '../variables' as *;
+@use '../functions' as *;
+@use '../mixins' as *;
 
 .contact {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	gap: 4rem;
-	height: 100vh;
+	padding: 2.625rem 0;
+	@include flex-column;
+	gap: 0;
+
+	&__content-section {
+		@include flex-between;
+		align-items: flex-start;
+		gap: space('section-gap');
+		padding-bottom: 3.125rem;
+		margin-bottom: 3.125rem;
+	}
 
 	&__content {
 		flex: 1;
 	}
 
 	&__title {
-		font-size: 2.5rem;
-		font-weight: bold;
+		font-size: font-size('heading-medium');
+		font-weight: 700;
 		line-height: 1.4;
-		margin-bottom: 1.5rem;
+		margin-bottom: 2rem;
 		max-width: 400px;
-		width: 100%;
 	}
 
 	&__description {
-		font-size: 1.1rem;
+		font-size: font-size('body-large');
 		line-height: 1.7;
+		width: 100%;
 		max-width: 500px;
-		opacity: 0.8;
+		opacity: opacity('visible');
 	}
 
 	&__form-container {
@@ -38,32 +46,21 @@
 	}
 
 	&__field {
-		margin-bottom: 1.5rem;
+		margin-bottom: space('form-gap');
 	}
 
 	&__label {
 		display: block;
-		font-weight: bold;
-		opacity: 0.6;
-		margin-bottom: 0.5rem;
+		font-size: font-size('label');
+		font-weight: 700;
+		opacity: opacity('readable');
+		margin-bottom: 1rem;
 		text-transform: capitalize;
 	}
 
 	&__input,
 	&__textarea {
-		width: 100%;
-		padding: 0.5rem;
-		border: none;
-		border-top: solid 1px #979797;
-		opacity: 0.3;
-		color: $text-color-primary;
-		font-size: 1rem;
-		transition: border-color 0.3s ease;
-
-		&:focus {
-			outline: none;
-			border-color: #979797;
-		}
+		@include form-input-base;
 	}
 
 	&__textarea {
@@ -74,15 +71,20 @@
 		background: $text-color-secondary;
 		color: #fff;
 		border: none;
+		border-radius: 4px;
 		padding: 0.875rem 2rem;
 		font-size: 1rem;
 		text-transform: capitalize;
 		font-weight: 700;
 		cursor: pointer;
-		transition: background-color 0.3s ease;
+		transition: all 0.3s ease;
 
 		&:hover {
-			background: $darker-color;
+			background-color: $darker-color;
+		}
+
+		&:active {
+			background: $lighter-color;
 		}
 	}
 }

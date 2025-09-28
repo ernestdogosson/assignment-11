@@ -1,10 +1,13 @@
-@import 'variables';
-@import 'mixins';
-@import 'global/general';
-@import 'global/typography';
-@import 'components/header';
-@import 'components/footer';
-@import 'components/navigation';
-@import 'pages/home';
-@import 'pages/project';
-@import 'pages/contact';
+@use 'variables';
+@use 'functions';
+@use 'mixins';
+
+@use 'global/general';
+@use 'global/typography';
+
+@use 'components/header';
+@use 'components/footer';
+
+@use 'pages/home';
+@use 'pages/contact';
+@use 'pages/project';

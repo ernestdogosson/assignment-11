@@ -1,19 +1,7 @@
+@use '../variables' as *;
+
 body {
 	font-family: $font;
-	color: $text-color-primary;
-}
-
-h1,
-h2,
-h3 {
-	margin: 0;
-}
-
-p {
-	margin-top: 0;
-}
-
-a {
 	color: $text-color-primary;
 }
 
@@ -21,8 +9,5 @@ a,
 a:active,
 a:visited {
 	text-decoration: none;
-}
-
-li {
-	list-style: none;
+	color: inherit;
 }

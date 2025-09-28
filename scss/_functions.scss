@@ -1,0 +1,14 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+@function space($key) {
+	@return map.get($common-spacing, $key);
+}
+
+@function font-size($key) {
+	@return map.get($font-sizes, $key);
+}
+
+@function opacity($level) {
+	@return map.get($opacity-levels, $level);
+}

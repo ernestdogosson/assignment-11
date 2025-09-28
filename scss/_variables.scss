@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 // Fonts
 $font: 'Mulish', sans-serif;
 
@@ -5,4 +7,30 @@ $font: 'Mulish', sans-serif;
 $text-color-primary: #111111;
 $text-color-secondary: #4a4ff2;
 $border-color: #979797;
-$darker-color: lighten($text-color-secondary, 5%);
+$lighter-color: color.adjust($text-color-secondary, $lightness: 5%);
+$darker-color: color.adjust($text-color-secondary, $lightness: -10%);
+
+// Opacity
+$opacity-levels: (
+	'low': 0.3,
+	'medium': 0.5,
+	'readable': 0.6,
+	'visible': 0.8,
+);
+
+// Spacing
+$common-spacing: (
+	'border-thin': 0.063rem,
+	'border-medium': 0.125rem,
+	'header-padding': 1.25rem,
+	'nav-spacing': 1.813rem,
+);
+
+// Font sizes
+$font-sizes: (
+	'heading-large': 3rem,
+	'heading-medium': 2.5rem,
+	'body-large': 1.125rem,
+	'label': 1.125rem,
+	'nav-link': 1.125rem,
+);

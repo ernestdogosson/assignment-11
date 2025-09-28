@@ -1,13 +1,14 @@
-@use '../mixins';
+@use '../variables' as *;
+@use '../functions' as *;
+@use '../mixins' as *;
 
 .header {
-	padding: 20px 0;
-	margin-bottom: 2rem;
+	margin: 1.9375rem 0 3rem;
+	padding: space('header-padding') 0;
 
 	&__navigation {
-		@include mixins.flex;
-		justify-content: space-between;
-		align-items: center;
+		@include flex-between;
+		@include flex-center;
 	}
 
 	&__logo {
@@ -19,27 +20,30 @@
 	}
 
 	&__list {
-		@include mixins.flex;
+		@include flex;
 		justify-content: end;
+		margin: 0;
+		padding: 0;
 	}
 
 	&__item {
-		margin-left: 30px;
-	}
+		margin-right: space('nav-spacing');
+		transition: transform 0.3s ease;
 
-	&__link {
-		text-decoration: none;
-		text-transform: capitalize;
-		font-size: 18px;
-		font-weight: bold;
-		padding: 0.75rem 1.6rem;
-		transition: all 0.3s ease;
-
-		&__link:hover {
-			animation: pulse 1s infinite;
+		&:hover {
+			transform: scale(1.2);
 		}
 	}
 
-	&__link:active {
+	&__link {
+		text-transform: capitalize;
+		font-size: font-size('nav-link');
+		font-weight: 700;
+		padding: 0.75rem 1.6rem;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: $text-color-secondary;
+		}
 	}
 }
